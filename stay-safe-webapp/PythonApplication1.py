@@ -43,17 +43,18 @@ def fillGrid(lat, long, size, data, need):
 
 def intialMap(size):
     win = GraphWin('Floor', SCREEN_RESOLUTION, SCREEN_RESOLUTION)
-
+    myImage = Image(Point(15,15), 'map.PNG')
+    myImage.draw(win)
     win.setCoords(0.0, 0.0, size, size)
     win.setBackground(color_rgb(255,255,255))
 
     # draw grid
-    for x in range(size):
-        for y in range(size):
-            win.plotPixel(x*SCREEN_RESOLUTION/size, y*SCREEN_RESOLUTION/size, "blue")
-            square = Rectangle(Point(x,y), Point(x+1,y+1))
-            square.draw(win)
-            square.setFill("white")
+    #for x in range(size):
+        #for y in range(size):
+            #win.plotPixel(x*SCREEN_RESOLUTION/size, y*SCREEN_RESOLUTION/size, "blue")
+            #square = Rectangle(Point(x,y), Point(x+1,y+1))
+            #square.draw(win)
+            #square.setFill("white")
     return win
 
 
