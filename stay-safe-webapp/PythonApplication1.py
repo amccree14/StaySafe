@@ -1,34 +1,30 @@
 import json
+import sys
 from graphics import *
 
-RESO = 0.1 #Lat Long resolution
-NEED = "Power"
-MAP_SIZE = 30
-LAT = 33.00
-LONG = -118.00
-SCREEN_RESOLUTION = 1000
+RESO = 0.1                  #Lat Long resolution
+MAP_SIZE = 30               #Sq of map size displayed
+LAT = 33.00                 #Latitude of Map visual
+LONG = -118.00              #Longitude of Map Visual
+SCREEN_RESOLUTION = 1000    #Size of screen visualization
+arg = ['1','1','0','0']     #Arguments to control what needs will be shown
 
 def main():
     json_data=open("Data2.json").read()
 
     data = json.loads(json_data)
-    #print(data) 
+
     win = intialMap(MAP_SIZE)
-    grid = fillGrid(LAT,LONG,MAP_SIZE,data, "Food")
+    grid = fillGrid(LAT,LONG,MAP_SIZE,data)
     map(win, LAT, LONG, MAP_SIZE, grid,"red")
-    #grid = fillGrid(LAT,LONG,MAP_SIZE,data, "Water")
-    #map(win, LAT, LONG, MAP_SIZE, grid,"blue")
 
     win.getMouse()
     win.close()
 
 
-def fillGrid(lat, long, size, data, need):
+def fillGrid(lat, long, size, data):
 
-    #org = {"severe": 0.00}
     grid = [[0 for x in range(size)] for y in range(size) ]
-    # Java syntax --- int[][] grid = new int[size][size];
-    #grid = [[org for x in range(size)] for y in range(size) ]
 
     for x in range(size):
         for y in range(size):
@@ -38,7 +34,6 @@ def fillGrid(lat, long, size, data, need):
             sdic = float(Jmap("Shelter", lat+RESO*x, long+RESO*y,data))/float(Jsearch("Shelter", data, size, lat, long))
             grid[x][y] = {"Food": fdic, "Water": wdic, "Power": pdic, "Shelter": sdic}
 
-           # grid[x][y] = float(Jmap(need, lat+RESO*x, long+RESO*y,data))/float(total)
     return grid
 
 def intialMap(size):
@@ -59,27 +54,27 @@ def intialMap(size):
 
 
 def map(win, lat, long, size, grid, color):
+
     for x in range(size):
         for y in range(size):
-            if grid[x][y]["Food"] >= 0.00001:
+            if grid[x][y]["Food"] >= 0.00001 and arg[0] == '1':
                 square = Rectangle(Point(x,y), Point(x+0.5,y+0.5))
                 square.draw(win)
-                #square.setFill(color_rgb(255,int(127*grid[x][y])+128,int(127*grid[x][y])+128))
                 square.setFill("red")
-            if grid[x][y]["Water"] >= 0.00001:
-                square = Rectangle(Point(x+0.5,y+0.5), Point(x+1,y+1))
-                square.draw(win)
-                #square.setFill(color_rgb(255,int(127*grid[x][y])+128,int(127*grid[x][y])+128))
-                square.setFill("blue")
-            if grid[x][y]["Power"] >= 0.00001:
-                square = Rectangle(Point(x,y+0.5), Point(x+0.5,y+1))
-                square.draw(win)
-                #square.setFill(color_rgb(255,int(127*grid[x][y])+128,int(127*grid[x][y])+128))
-                square.setFill("yellow")
-            if grid[x][y]["Shelter"] >= 0.00001:
+
+            if grid[x][y]["Water"] >= 0.00001 and arg[1] == '1':
                 square = Rectangle(Point(x+0.5,y), Point(x+1,y+0.5))
                 square.draw(win)
-                #square.setFill(color_rgb(255,int(127*grid[x][y])+128,int(127*grid[x][y])+128))
+                square.setFill("blue")
+
+            if grid[x][y]["Power"] >= 0.00001 and arg[2] == '1':
+                square = Rectangle(Point(x,y+0.5), Point(x+0.5,y+1))
+                square.draw(win)
+                square.setFill("yellow")
+
+            if grid[x][y]["Shelter"] >= 0.00001 and arg[3] == '1':
+                square = Rectangle(Point(x+0.5,y+0.5), Point(x+1,y+1))
+                square.draw(win)
                 square.setFill("green")
 
 
