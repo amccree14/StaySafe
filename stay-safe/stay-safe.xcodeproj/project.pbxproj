@@ -26,7 +26,9 @@
 		B81AA1ED1F22A1A90011FE5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81AA1EC1F22A1A90011FE5C /* UIKit.framework */; };
 		B8A501E91F22C1FD00B4EF8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A501E81F22C1FD00B4EF8F /* Images.xcassets */; };
 		B8A501EB1F22DD1F00B4EF8F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A501EA1F22DD1F00B4EF8F /* MapViewController.swift */; };
-		B8A501ED1F22F20F00B4EF8F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A501EC1F22F20F00B4EF8F /* MainViewController.swift */; };
+		B8A501EF1F22F8C500B4EF8F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A501EE1F22F8C500B4EF8F /* ProfileViewController.swift */; };
+		B8A501F31F22FB0000B4EF8F /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A501F21F22FB0000B4EF8F /* CheckViewController.swift */; };
+		B8A501F51F2305DC00B4EF8F /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A501F41F2305DC00B4EF8F /* ContactsViewController.swift */; };
 		B8E858DE1F2290E9006BB4F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E858DD1F2290E9006BB4F6 /* AppDelegate.swift */; };
 		B8E858E01F2290E9006BB4F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E858DF1F2290E9006BB4F6 /* ViewController.swift */; };
 		B8E858E31F2290E9006BB4F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E858E11F2290E9006BB4F6 /* Main.storyboard */; };
@@ -73,7 +75,9 @@
 		B81AA1EC1F22A1A90011FE5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8A501E81F22C1FD00B4EF8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B8A501EA1F22DD1F00B4EF8F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		B8A501EC1F22F20F00B4EF8F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B8A501EE1F22F8C500B4EF8F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B8A501F21F22FB0000B4EF8F /* CheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		B8A501F41F2305DC00B4EF8F /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		B8E858DA1F2290E9006BB4F6 /* stay-safe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stay-safe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E858DD1F2290E9006BB4F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8E858DF1F2290E9006BB4F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -179,10 +183,12 @@
 			isa = PBXGroup;
 			children = (
 				B8E858DD1F2290E9006BB4F6 /* AppDelegate.swift */,
-				B8E858DF1F2290E9006BB4F6 /* ViewController.swift */,
-				B8A501EA1F22DD1F00B4EF8F /* MapViewController.swift */,
 				B8E858E11F2290E9006BB4F6 /* Main.storyboard */,
-				B8A501EC1F22F20F00B4EF8F /* MainViewController.swift */,
+				B8E858DF1F2290E9006BB4F6 /* ViewController.swift */,
+				B8A501EE1F22F8C500B4EF8F /* ProfileViewController.swift */,
+				B8A501F21F22FB0000B4EF8F /* CheckViewController.swift */,
+				B8A501EA1F22DD1F00B4EF8F /* MapViewController.swift */,
+				B8A501F41F2305DC00B4EF8F /* ContactsViewController.swift */,
 				B8E858E41F2290E9006BB4F6 /* Assets.xcassets */,
 				B8E858E61F2290E9006BB4F6 /* LaunchScreen.storyboard */,
 				B8E858E91F2290E9006BB4F6 /* Info.plist */,
@@ -347,8 +353,10 @@
 			files = (
 				B8E858E01F2290E9006BB4F6 /* ViewController.swift in Sources */,
 				B8A501EB1F22DD1F00B4EF8F /* MapViewController.swift in Sources */,
+				B8A501EF1F22F8C500B4EF8F /* ProfileViewController.swift in Sources */,
+				B8A501F31F22FB0000B4EF8F /* CheckViewController.swift in Sources */,
 				B8E858DE1F2290E9006BB4F6 /* AppDelegate.swift in Sources */,
-				B8A501ED1F22F20F00B4EF8F /* MainViewController.swift in Sources */,
+				B8A501F51F2305DC00B4EF8F /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

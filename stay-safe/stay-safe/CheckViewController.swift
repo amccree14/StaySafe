@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  CheckViewController.swift
 //  stay-safe
 //
 //  Created by Cristian Gonzales on 7/21/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class CheckViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
