@@ -253,12 +253,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <connections>
-                        <outlet property="foodSwitch" destination="JZE-bT-DU4" id="XKv-PZ-Ibg"/>
-                        <outlet property="powerSwitch" destination="D93-CD-EFO" id="39N-Ab-xvf"/>
-                        <outlet property="shelterSwitch" destination="5pQ-qM-KUE" id="Rdo-Iv-71G"/>
-                        <outlet property="waterSwitch" destination="KBi-Q0-MSl" id="6U7-3T-dt7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UuC-Rq-zBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
