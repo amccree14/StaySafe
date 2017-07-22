@@ -287,6 +287,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="Bhg-Vc-QQf" id="Std-m4-Hcd"/>
+                        <outlet property="nextButton" destination="R4n-Ux-ATT" id="x0v-dK-hgw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AR-qV-eAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -393,9 +397,9 @@
         <image name="uber_selection" width="219" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="j6r-kw-EPd"/>
         <segue reference="Kx7-0h-udb"/>
-        <segue reference="dUx-NZ-Cix"/>
+        <segue reference="Qd2-YO-Gzz"/>
+        <segue reference="j6r-kw-EPd"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>
