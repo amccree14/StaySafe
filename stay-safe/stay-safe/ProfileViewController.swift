@@ -21,15 +21,11 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
+    @IBOutlet weak var phoneNumField: UITextField!
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func nextButton(_ sender: Any) {
+        
     }
-    */
-
 }
