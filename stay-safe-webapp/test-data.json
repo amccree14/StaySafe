@@ -1,0 +1,171 @@
+{“Data”: {
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: True, 
+	 “Location”: 33.83269,-118.3272286,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: False,
+	 “Shelter”: True,
+	 “Power”: False,
+	 “Location”: 33.8296756,-118.3100518,
+	 “Time”: 9:47
+	}
+	{“Food”: True,
+	 “Water”: False,
+	 “Shelter”: True,
+	 “Power”: False,
+	 “Location”: 33.8596756,-118.3700518,
+	 “Time”: 9:47
+	}
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: True,
+	 “Location”: 33.9198098,-118.2478289,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: False,
+	 “Shelter”: False,
+	 “Power”: False,
+	 “Location”: 33.8596756,-118.3700518,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: False,
+	 “Location”: 33.8576756,-118.3380518,
+	 “Time”: 9:47
+	}
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: False,
+	 “Power”: False,
+	 “Location”: 33.887,-119.3780518,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: False,
+	 “Location”: 33.8595366,-118.9380518,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: False,
+	 “Location”: 33.8889571,-117.5033739,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: True,
+	 “Shelter”: False,
+	 “Power”: True,
+	 “Location”: 33.8876571,-117.5033869,
+	 “Time”: 9:47
+	}
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: True,
+	 “Location”: 33.8873571,-117.9033869,
+	 “Time”: 9:47
+	}
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: True,
+	 “Location”: 33.9876571,-117.0033869,
+	 “Time”: 9:47
+	}
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: True,
+	 “Location”: 33.9996571,-117.3053869,
+	 “Time”: 9:47
+	}
+	{“Food”: True,
+	 “Water”: False,
+	 “Shelter”: True,
+	 “Power”: True,
+	 “Location”: 33.9006571,-117.3000869,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: True,
+	 “Location”: 33.0786571,-117.8933869,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: True,
+	 “Shelter”: False,
+	 “Power”: False,
+	 “Location”: 34.1364917,-117.327665,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: False,
+	 “Shelter”: False,
+	 “Power”: False,
+	 “Location”: 34.1364917,-117.327665,
+	 “Time”: 9:47
+	}
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: True,
+	 “Location”: 34.4176303,-117.4229076,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: False,
+	 “Shelter”: False,
+	 “Power”: False,
+	 “Location”: 34.0169463,-118.5037996,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: False,
+	 “Shelter”: False,
+	 “Power”: False,
+	 “Location”: 34.0169463,-118.5137996,
+	 “Time”: 9:47
+	}
+	{“Food”: False,
+	 “Water”: True,
+	 “Shelter”: False,
+	 “Power”: False,
+	 “Location”: 34.0129463,-118.5037996,
+	 “Time”: 9:47
+	}
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: True,
+	 “Location”: 34.0229463,-118.5037996,
+	 “Time”: 9:49
+	}
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: True,
+	 “Power”: True,
+	 “Location”: 34.0506501,-118.5596302,
+	 “Time”: 9:57
+	}
+	{“Food”: True,
+	 “Water”: True,
+	 “Shelter”: False,
+	 “Power”: False,
+	 “Location”: 34.0516501,-118.5596302,
+	 “Time”: 10:02
+	}
+	}
+}
