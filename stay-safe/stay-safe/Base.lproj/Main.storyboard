@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lrk-yi-hS9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lrk-yi-hS9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,7 +32,7 @@
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="29"/>
                                 <state key="normal" title="Check-In" backgroundImage="uber_selection"/>
                                 <connections>
-                                    <segue destination="iYE-VJ-06d" kind="show" id="uUP-fO-e61"/>
+                                    <segue destination="iYE-VJ-06d" kind="show" id="c0z-pV-d4g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7px-RF-Umg">
@@ -138,7 +138,7 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButton:" destination="Lrk-yi-hS9" eventType="touchUpInside" id="jWV-sp-D5R"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="ceZ-tr-6lb"/>
+                                    <segue destination="c61-cO-Ot7" kind="show" id="foS-Tc-yyu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -152,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVH-NO-eJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="62" y="791"/>
+            <point key="canvasLocation" x="61.600000000000001" y="790.25487256371821"/>
         </scene>
         <!--Check View Controller-->
         <scene sceneID="iLj-LQ-TFs">
@@ -180,7 +180,7 @@
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="Lrk-yi-hS9" kind="show" id="PWv-Eq-nEr"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="cra-Yf-8o3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W12-Yh-4Ub">
@@ -191,7 +191,7 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButton:" destination="iYE-VJ-06d" eventType="touchUpInside" id="Qye-BU-gmm"/>
-                                    <segue destination="c61-cO-Ot7" kind="show" id="Omd-Gk-YP4"/>
+                                    <segue destination="pBL-p1-dtF" kind="show" id="0W1-7w-e5T"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZE-bT-DU4">
@@ -371,7 +371,17 @@
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="iYE-VJ-06d" kind="show" id="HEq-xZ-8Gh"/>
+                                    <segue destination="Lrk-yi-hS9" kind="show" id="yIS-rf-Wjx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3t-JG-yY1">
+                                <rect key="frame" x="263" y="615" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="m7D-sY-4iS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -385,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnc-iD-svb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="950" y="108"/>
+            <point key="canvasLocation" x="949.60000000000002" y="107.49625187406298"/>
         </scene>
     </scenes>
     <resources>
@@ -393,9 +403,9 @@
         <image name="uber_selection" width="219" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uUP-fO-e61"/>
-        <segue reference="j6r-kw-EPd"/>
-        <segue reference="Omd-Gk-YP4"/>
+        <segue reference="0W1-7w-e5T"/>
+        <segue reference="cra-Yf-8o3"/>
+        <segue reference="foS-Tc-yyu"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>
