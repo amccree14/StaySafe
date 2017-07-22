@@ -191,24 +191,36 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButton:" destination="iYE-VJ-06d" eventType="touchUpInside" id="Qye-BU-gmm"/>
-                                    <segue destination="pBL-p1-dtF" kind="show" id="dUx-NZ-Cix"/>
+                                    <segue destination="c61-cO-Ot7" kind="show" id="Omd-Gk-YP4"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZE-bT-DU4">
                                 <rect key="frame" x="269" y="238" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="foodSwitch:" destination="iYE-VJ-06d" eventType="valueChanged" id="y3a-Ae-k5z"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBi-Q0-MSl">
                                 <rect key="frame" x="269" y="296" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="waterSwitch:" destination="iYE-VJ-06d" eventType="valueChanged" id="zeO-nW-wm8"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D93-CD-EFO">
                                 <rect key="frame" x="269" y="361" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="powerSwitch:" destination="iYE-VJ-06d" eventType="valueChanged" id="1WI-MV-1CU"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pQ-qM-KUE">
                                 <rect key="frame" x="269" y="426" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="shelterSwitch:" destination="iYE-VJ-06d" eventType="valueChanged" id="brx-2l-UvI"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AJ-k5-KTW">
                                 <rect key="frame" x="55" y="238" width="133" height="30"/>
@@ -265,36 +277,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhg-Vc-QQf">
-                                <rect key="frame" x="27" y="615" width="79" height="32"/>
+                                <rect key="frame" x="148" y="615" width="79" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="iYE-VJ-06d" kind="show" id="Kx7-0h-udb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4n-Ux-ATT">
-                                <rect key="frame" x="269" y="615" width="79" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="c61-cO-Ot7" kind="show" id="UNq-Rl-mXJ"/>
+                                    <segue destination="c61-cO-Ot7" kind="show" id="a2J-ya-1ey"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="Bhg-Vc-QQf" id="Std-m4-Hcd"/>
-                        <outlet property="nextButton" destination="R4n-Ux-ATT" id="x0v-dK-hgw"/>
+                        <outlet property="backButton" destination="Bhg-Vc-QQf" id="Qac-ME-yFS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1AR-qV-eAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="767" y="38"/>
+            <point key="canvasLocation" x="1700" y="107"/>
         </scene>
         <!--Contacts View Controller-->
         <scene sceneID="fhr-sW-SGa">
@@ -366,6 +367,7 @@
                                 <connections>
                                     <action selector="nextButton:" destination="Lrk-yi-hS9" eventType="touchUpInside" id="42x-d2-Bke"/>
                                     <action selector="submitButton:" destination="c61-cO-Ot7" eventType="touchUpInside" id="gLz-P1-TWU"/>
+                                    <segue destination="pBL-p1-dtF" kind="show" id="Y6S-gj-60l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pry-dP-vmU">
@@ -375,7 +377,7 @@
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="pBL-p1-dtF" kind="show" id="Qd2-YO-Gzz"/>
+                                    <segue destination="iYE-VJ-06d" kind="show" id="HEq-xZ-8Gh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -389,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnc-iD-svb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658.4000000000001" y="51.724137931034484"/>
+            <point key="canvasLocation" x="950" y="108"/>
         </scene>
     </scenes>
     <resources>
@@ -397,9 +399,9 @@
         <image name="uber_selection" width="219" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Kx7-0h-udb"/>
-        <segue reference="Qd2-YO-Gzz"/>
+        <segue reference="uUP-fO-e61"/>
         <segue reference="j6r-kw-EPd"/>
+        <segue reference="Omd-Gk-YP4"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>

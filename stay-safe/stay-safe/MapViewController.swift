@@ -25,7 +25,6 @@ class MapViewController: UIViewController {
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: 33.83269, longitude: -118.3272286)
         marker.map = mapView
-        
     }
     
     override func viewDidLoad() {

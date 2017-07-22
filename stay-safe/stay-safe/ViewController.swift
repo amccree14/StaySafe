@@ -23,7 +23,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func emergencyButton(_ sender: Any) {
-        
+        if let url = URL(string: "tel://911"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
     }
 
 }

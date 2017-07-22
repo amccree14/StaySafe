@@ -26,7 +26,7 @@ class ContactsViewController: UIViewController {
     @IBOutlet weak var phoneNumField: UITextField!
     
     @IBAction func submitButton(_ sender: Any) {
-        
+        // Store to DB
     }
 
 }
